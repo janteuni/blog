@@ -139,6 +139,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 button {
   cursor: pointer;
+  outline: none;
   -webkit-appearance: button;
 }
 

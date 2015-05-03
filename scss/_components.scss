@@ -1,1 +1,13 @@
+/* Button */
 
+.btn-info {
+  @include btn($blue, $x-light-blue, $d-blue, $dark-blue);
+}
+
+.btn-success {
+  @include btn($teal, $x-light-teal, $d-teal, $dark-teal);
+}
+
+.btn-danger {
+  @include btn($orange, $x-light-orange, $d-orange, $dark-orange);
+}

@@ -74,6 +74,8 @@ function ananas_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
     // add bower_components: GRID FS
+    wp_enqueue_script( 'script-name', get_template_directory_uri() . '/bower_components/jquery/dist/jquery.min.js', array(), '1.0.0', true );
+
     wp_enqueue_script( 'script-name', get_template_directory_uri() . '/bower_components/formstone/dist/js/core.js', array(), '1.0.0', true );
 
 	// vendor scripts
