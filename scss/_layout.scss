@@ -1,2 +1,9 @@
 /* Sticky footer */
 @include sticky-footer( $footerheight, '#page','#main','#footer');
+
+body {
+  font-family: $main;
+  font-size: 16px;
+  line-height: 1em;
+  background-color: $bg;
+}

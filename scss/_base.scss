@@ -6,14 +6,39 @@ $max-width: 1800px;
 $footerheight: 50px;
 
 /* Colors */
-$text: #555;
-$links: blue;
-$hover: red;
+$text: #162b20;
+$links: #4281cc;
+$hover: #3c75a5;
 
-$bg: #FFF;
+$bg: #e3fff0;
+
+  /* Teal */
+  $x-light-teal: #e3fff0;
+  $light-teal: #98ddc2;
+  $medium-teal: #98ddc2;
+  $teal: #55bb91;
+  $d-teal: #529972;
+  $dark-teal: #427c62;
+
+  /* Blue */
+  $x-light-blue: #e3f1ff;
+  $light-blue: #9bc0f7;
+  $medium-blue: #7aadf7;
+  $blue: #4e8fef;
+  $d-blue: #4281cc;
+  $dark-blue: #3c75a5;
+
+  /* Orange */
+  $x-light-orange: #ffefe3;
+  $light-orange: #f7bf8a;
+  $medium-orange: #f7ab63;
+  $orange: #ef8e30;
+  $d-orange: #ce7436;
+  $dark-orange: #ba6232;
 
 /* Fonts */
-$main: sans-serif;
+$main: Roboto, sans-serif;
+$title: 'Amatic SC', cursive;;
 
 /* Borders */
-$border: 1px solid #000;
+$border: 1px solid #d3eadc;
