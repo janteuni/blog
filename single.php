@@ -2,14 +2,12 @@
 
 get_header(); ?>
 
-<section id="primary">
+<section id="primary" class="fs-row">
 
 	<?php while ( have_posts() ) : the_post(); ?>
-
+    <div class="fs-cell fs-sm-full fs-lg-8">
 		<?php get_template_part( 'content', 'single' ); ?>
-
-		<?php comments_template( '', true ); ?>
-
+    </div>
 	<?php endwhile; // end of the loop. ?>
 
 </section>

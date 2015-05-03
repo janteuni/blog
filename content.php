@@ -1,25 +1,18 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header>
-		<h1><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'ananas' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'ananas' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
 		</h1>
-		<span><?php echo get_the_date(); ?></span>
+		<p class="entry-date"><?php echo get_the_date(); ?></p>
 	</header><!-- .entry-header -->
 
-	<div>
+	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'ananas' ) . '</span>', 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 
-	<footer>
+	<footer class="entry-meta">
 		
-		<?php the_tags( '<div>' . __( 'Tagged: ', 'ananas' ) , ', ', '</div>' ); ?>
-		
-		<div>
-			<?php comments_popup_link( 
-				 __( 'Leave a comment', 'ananas' ), 
-				 __( '1 comment', 'ananas' ), 
-				 __( '% comments', 'ananas' ) ); 
-			?>
-		</div>
+		<?php the_tags( '<div class="post-tags">' . '<span class="tag">Tag: </span>' , ' ', '</div>' ); ?>
+
 	</footer><!-- #entry-meta -->
 </article><!-- #post-<?php the_ID(); ?> -->

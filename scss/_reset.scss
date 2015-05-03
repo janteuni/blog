@@ -160,3 +160,10 @@ textarea {
   overflow: auto;
   vertical-align: top;
 }
+
+a {
+  text-decoration: none;
+  &:hover, &:visited, &:active {
+    text-decoration: none;
+  }
+}

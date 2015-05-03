@@ -1,3 +1,67 @@
+/* Articles */
+
+article {
+  background-color: white;
+  padding: 3em;
+  border: 1px solid $border;
+  margin-bottom: 2em;
+}
+
+.entry-header {
+  border-bottom: 1px solid $border;
+  margin-bottom: 2em;
+  a {
+    color: $dark-teal;
+  }
+}
+
+.entry-date {
+  font-size: 14px;
+  font-style: italic;
+  color: $medium-teal;
+  line-height: 2.5em;
+}
+
+.entry-title {
+  font-size: 3em;
+  line-height: 2em;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  color: $dark-teal;
+}
+.entry-content {
+  font-size: 21px;
+  line-height: 1.7em;
+  font-weight: lighter;
+}
+
+.entry-meta {
+  margin-top: 1em;
+  color: $dark-teal;
+  font-weight: lighter;
+}
+
+.post-tags {
+  padding-top: 2em;
+  .tag {
+   margin-right: 1em;
+  }
+  a {
+    border-radius: 20px;
+    box-shadow: rgba(black, .2) 1px 1px 0 1px;
+    color: $x-light-teal;
+    background-color: $teal;
+    border: 1px solid $d-teal;
+    padding: .2em 1em .2em 1em;
+    text-align: center;
+    &:hover, &:active {
+      background-color: darken($teal, 2);
+      border: 1px solid $dark-teal;
+    }
+  }
+}
+
+
 /* Images & Embeds */
 embed
 iframe,
