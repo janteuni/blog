@@ -10,6 +10,7 @@ get_header(); ?>
     </div>
 	<?php endwhile; // end of the loop. ?>
 
-</section>
+
 <?php get_sidebar(); ?>
+</section>
 <?php get_footer(); ?>

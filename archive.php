@@ -31,7 +31,8 @@ get_header(); ?>
         </div>
 	<?php endif; ?>
 
-</section><!-- #primary -->
+
 
 <?php get_sidebar(); ?>
+</section><!-- #primary -->
 <?php get_footer(); ?>

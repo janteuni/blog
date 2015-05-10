@@ -22,6 +22,7 @@ get_header(); ?>
             </div><!-- .entry-content -->
         </article><!-- #post-0 -->
     </div>
-</section><!-- #primary -->
+
 <?php get_sidebar(); ?>
+</section><!-- #primary -->
 <?php get_footer(); ?>
