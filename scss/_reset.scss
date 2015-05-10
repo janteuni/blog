@@ -144,6 +144,7 @@ button {
 }
 
 input {
+  outline: none;
   &[type="button"], &[type="reset"], &[type="submit"] {
     cursor: pointer;
     -webkit-appearance: button;

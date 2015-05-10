@@ -85,6 +85,25 @@ article {
   }
 }
 
+/***********
+** Not Found
+*/
+
+.not-found {
+  text-align: center;
+  h1 {
+    color: $teal;
+    line-height: 2em;
+    font-size: 4em;
+  }
+  p {
+    color: $teal;
+    font-weight: 100;
+    font-size: 2em;
+    line-height: 1.5em;
+    margin-bottom: 2em;
+  }
+}
 
 /*****************
 ** Images & Embeds

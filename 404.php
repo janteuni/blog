@@ -7,21 +7,21 @@
 
 get_header(); ?>
 
-<section id="primary" role="main">
+<section id="primary" role="main" class="fs-row">
+    <div class="fs-cell fs-sm-full fs-lg-8">
+        <article id="post-0">
+            <div class="not-found">
+                <img src="<?php bloginfo('template_directory'); ?>/assets/images/404.png" alt="L'âne à nageoires - not found 404"/>
+                <h1>Whoops !</h1>
+                <p>
+                    Il n'y a rien ici, <br>mais vous pouvez <strong>faire une recherche</strong>
+                </p>
 
-	<article id="post-0">
-		<header>
-			<h1><?php _e( 'Uh oh!', 'ananas' ); ?></h1>
-		</header>
+                <?php get_search_form(); ?>
 
-		<div>
-			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps a search would help?', 'ananas' ); ?></p>
-
-			<?php get_search_form(); ?>
-
-		</div><!-- .entry-content -->
-	</article><!-- #post-0 -->
-
+            </div><!-- .entry-content -->
+        </article><!-- #post-0 -->
+    </div>
 </section><!-- #primary -->
 <?php get_sidebar(); ?>
-<?php get_footer(); ?>?>
+<?php get_footer(); ?>

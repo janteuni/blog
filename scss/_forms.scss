@@ -1,1 +1,19 @@
 
+input[type="text"] {
+  background-color: $bg;
+  border: 1px solid darken($x-light-teal, 5);
+  padding: .8em;
+  color: $teal;
+  font-size: 1.2em;
+  &:focus {
+    border-left-color: $medium-teal;
+  }
+}
+
+input[type="submit"] {
+  background-color: $teal;
+  padding: .8em;
+  color: $x-light-teal;
+  border: 1px solid $teal;
+  font-size: 1.2em;
+}
