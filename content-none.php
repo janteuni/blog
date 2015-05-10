@@ -10,7 +10,7 @@
         <img src="<?php bloginfo('template_directory'); ?>/assets/images/ananas-group.png" alt="ananas paper craft - L'âne à nageoires"/>
         <?php if ( is_archive() ) : ?>
 
-            <p><?php _e( 'Il n\'y a pas de contenu pour cette archive. Essayer des mots clés à la place...', 'ananas' ); ?></p>
+            <p><?php _e( 'Il n\'y a pas de contenu dans cette catégorie. Essayer des mots clés à la place...', 'ananas' ); ?></p>
             <?php get_search_form(); ?>
 
         <?php elseif ( is_search() ) : ?>

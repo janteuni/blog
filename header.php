@@ -39,14 +39,13 @@
 <body class="fs-grid">
 	<div id="page">
 		<header role="banner" class="fs-row">
-            <div class="fs-cell fs-all-full">
-                ICI LE HEADER
-            </div>
-            <div class="fs-cell fs-all-full">
-                <nav role="navigation">
-                    ICI LA NAV
-                    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-                </nav><!-- #access -->
+            <div class="fs-cell fs-all-full relative">
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                        <img src="<?php bloginfo('template_directory'); ?>/assets/images/banner-header.png" alt="L'âne à nageoires - banniere montagnes ane"/>
+                    </a>
+                    <nav role="navigation">
+                        <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+                    </nav>
             </div>
 
 		</header><!-- #branding -->

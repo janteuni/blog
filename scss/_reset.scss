@@ -163,8 +163,22 @@ textarea {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
   &:hover, &:visited, &:active {
     text-decoration: none;
+    color: inherit;
   }
+}
+
+ul {
+  color: inherit;
+  li {
+    text-decoration: none;
+    list-style: none;
+  }
+}
+
+.relative {
+  position: relative;
 }
