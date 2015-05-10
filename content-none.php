@@ -5,28 +5,24 @@
  * @package ananas
  */
 ?>
-
 <article>
-	<header>
-		<h1><?php _e( 'Nothing Found', 'ananas' ); ?></h1>
-	</header><!-- .entry-header -->
+    <div class="not-found">
+        <img src="<?php bloginfo('template_directory'); ?>/assets/images/ananas-group.png" alt="ananas paper craft - L'âne à nageoires"/>
+        <?php if ( is_archive() ) : ?>
 
-	<div>
-		<?php if ( is_archive() ) : ?>
-		
-			<p><?php _e( 'There are no published posts for this archive. Try searching using keywords instead.', 'ananas' ); ?></p>
-			<?php get_search_form(); ?>
+            <p><?php _e( 'Il n\'y a pas de contenu pour cette archive. Essayer des mots clés à la place...', 'ananas' ); ?></p>
+            <?php get_search_form(); ?>
 
-		<?php elseif ( is_search() ) : ?>
+        <?php elseif ( is_search() ) : ?>
 
-			<p><?php _e( 'No matches were found for your search terms. Please try again with different keywords.', 'ananas' ); ?></p>
-			<?php get_search_form(); ?>
+            <p><?php _e( 'Nous n\'avons rien trouvé pour votre recherche. Essayer d\'autres mots clés.', 'ananas' ); ?></p>
+            <?php get_search_form(); ?>
 
-		<?php else : ?>
+        <?php else : ?>
 
-			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps a search would help?', 'ananas' ); ?></p>
-			<?php get_search_form(); ?>
+            <p><?php _e( 'Nous ne trouvons pas ce que vous cherchez. Une recherche peut vous aider ?', 'ananas' ); ?></p>
+            <?php get_search_form(); ?>
 
-		<?php endif; ?>
-	</div><!-- .entry-content -->
+        <?php endif; ?>
+    </div><!-- .entry-content -->
 </article>
