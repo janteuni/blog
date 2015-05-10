@@ -1,4 +1,6 @@
-/* Articles */
+/**********
+** Articles
+*/
 
 article {
   background-color: white;
@@ -10,8 +12,17 @@ article {
 .entry-header {
   border-bottom: 1px solid $border;
   margin-bottom: 2em;
+  .entry-title {
+    font-size: 3em;
+    line-height: 2em;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+  }
   a {
     color: $dark-teal;
+    &:hover {
+      color: darken($dark-teal, 5);
+    }
   }
 }
 
@@ -22,13 +33,6 @@ article {
   line-height: 2.5em;
 }
 
-.entry-title {
-  font-size: 3em;
-  line-height: 2em;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 400;
-  color: $dark-teal;
-}
 .entry-content {
   font-size: 21px;
   line-height: 1.7em;
@@ -49,6 +53,7 @@ article {
   a {
     border-radius: 20px;
     box-shadow: rgba(black, .2) 1px 1px 0 1px;
+    line-height: 2.5em;
     color: $x-light-teal;
     background-color: $teal;
     border: 1px solid $d-teal;
@@ -61,8 +66,31 @@ article {
   }
 }
 
+/**********
+** Archives
+*/
 
-/* Images & Embeds */
+.archive-header {
+  background-image: url(assets/images/head-archives.png);
+  background-repeat: no-repeat;
+  //background-size: contain;
+  background-size: 100% 87px;
+  height: 87px;
+  padding-left: 3em;
+  .archive-title {
+    font-size: 3em;
+    line-height: 1.6em;
+    font-family: "Amatic SC", cursive;
+    color: $bg;
+    text-shadow:  -1px -1px 0 rgba(0,0,0, .3);
+  }
+}
+
+
+/*****************
+** Images & Embeds
+*/
+
 embed
 iframe,
 object {

@@ -10,25 +10,25 @@
 
 get_header(); ?>
 
-<section id="primary" role="main">
+<section id="primary" role="main" class="fs-row">
 
 	<?php if ( have_posts() ) : ?>
-
-		<?php get_template_part( 'inc/archive-header' ); ?>
-
+        <div class="fs-cell fs-sm-full fs-lg-8">
+		    <?php get_template_part( 'inc/archive-header' ); ?>
+        </div>
 		<?php /* Start the Loop */ ?>
 		<?php while ( have_posts() ) : the_post(); ?>
-
-			<?php get_template_part( 'content', get_post_format() ); ?>
-
+            <div class="fs-cell fs-sm-full fs-lg-8">
+			    <?php get_template_part( 'content', get_post_format() ); ?>
+            </div>
 		<?php endwhile; ?>
-
-		<?php get_template_part( 'inc/pagination' ); ?>
-
+        <div class="fs-cell fs-sm-full fs-lg-8">
+		    <?php get_template_part( 'inc/pagination' ); ?>
+        </div>
 	<?php else : ?>
-
-		<?php get_template_part( 'content', 'none' ); ?>
-
+        <div class="fs-cell fs-sm-full fs-lg-8">
+		    <?php get_template_part( 'content', 'none' ); ?>
+        </div>
 	<?php endif; ?>
 
 </section><!-- #primary -->
