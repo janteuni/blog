@@ -40,12 +40,15 @@
 	<div id="page">
 		<header role="banner" class="fs-row">
             <div class="fs-cell fs-all-full relative">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                        <img src="<?php bloginfo('template_directory'); ?>/assets/images/banner-header.png" alt="L'âne à nageoires - banniere montagnes ane"/>
-                    </a>
-                    <nav role="navigation">
-                        <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-                    </nav>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="fs-xs-hide fs-sm-hide fs-md-hide">
+                    <img src="<?php bloginfo('template_directory'); ?>/assets/images/banner-header.png" alt="L'âne à nageoires - banniere montagnes ane"/>
+                </a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="fs-lg-hide fs-xl-hide">
+                    <img src="<?php bloginfo('template_directory'); ?>/assets/images/small-banner.png" alt="L'âne à nageoires - banniere montagnes ane"/>
+                </a>
+                <nav role="navigation" class="">
+                    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+                </nav>
             </div>
 
 		</header><!-- #branding -->
