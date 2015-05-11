@@ -11,26 +11,20 @@
 get_header(); ?>
 
 <section id="primary" role="main" class="fs-row">
+    <div class="fs-cell fs-sm-full fs-lg-8">
 
 	<?php if ( have_posts() ) : ?>
-        <div class="fs-cell fs-sm-full fs-lg-8">
 		    <?php get_template_part( 'inc/archive-header' ); ?>
-        </div>
 		<?php /* Start the Loop */ ?>
 		<?php while ( have_posts() ) : the_post(); ?>
-            <div class="fs-cell fs-sm-full fs-lg-8">
 			    <?php get_template_part( 'content', get_post_format() ); ?>
-            </div>
 		<?php endwhile; ?>
-        <div class="fs-cell fs-sm-full fs-lg-8">
 		    <?php get_template_part( 'inc/pagination' ); ?>
-        </div>
 	<?php else : ?>
-        <div class="fs-cell fs-sm-full fs-lg-8">
 		    <?php get_template_part( 'content', 'none' ); ?>
-        </div>
 	<?php endif; ?>
 
+    </div>
 
 
 <?php get_sidebar(); ?>

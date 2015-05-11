@@ -12,7 +12,7 @@
 
 	<footer class="entry-meta">
 		
-		<?php the_tags( '<div class="post-tags">' . '<span class="tag">Tag: </span>' , ' ', '</div>' ); ?>
+		<?php the_tags( '<div class="tagcloud">' . '<span class="tag">Tag: </span>' , ' ', '</div>' ); ?>
 
 	</footer><!-- #entry-meta -->
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -8,8 +8,8 @@
  */
 
 get_header(); ?>
-
-<section id="primary" role="main">
+<div class="fs-row">
+    <section id="primary" role="main" class="fs-cell fs-sm-full fs-lg-8">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
@@ -19,7 +19,8 @@ get_header(); ?>
 
 		<?php endwhile; // end of the loop. ?>
 
-<?php get_sidebar(); ?>
+    </section><!-- #primary -->
+    <?php get_sidebar(); ?>
+</div>
 
-</section><!-- #primary -->
 <?php get_footer(); ?>
