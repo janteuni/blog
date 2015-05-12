@@ -45,12 +45,44 @@ article {
   font-weight: lighter;
 }
 
+.contact-content {
+  h1 {
+    color: $teal;
+    font-size: 2em;
+    font-weight: 500;
+    font-family: "Roboto Slab";
+    line-height: 2.5em;
+  }
+  p {
+    display: flex;
+    margin-bottom: .8em;
+    color: $d-teal;
+  }
+  i {
+    display: block;
+    margin-right: .5em;
+    text-align: center;
+    padding-top: 9px;
+    background-color: $teal;
+    color: $bg;
+    text-shadow: rgba(0,0,0, .2) -1px 0 1px;
+    font-size: 1.2em;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border: 1px solid darken($teal, 5);
+  }
+  img {
+    margin-top: 1em;
+  }
+}
+
 /**********
 ** Archives
 */
 
 .tagcloud {
-  padding-top: 2em;
+ // padding-top: 2em;
   .tag {
    margin-right: 1em;
   }

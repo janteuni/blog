@@ -20,6 +20,7 @@ get_header(); ?>
                 </div><!-- .entry-content -->
             </article><!-- #post-<?php the_ID(); ?> -->
         <?php endwhile; // end of the loop. ?>
+        <?php get_template_part( 'inc/pagination' ); ?>
 
     </section><!-- #primary -->
     <?php get_sidebar(); ?>

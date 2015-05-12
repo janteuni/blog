@@ -1,3 +1,56 @@
+.widget {
+  margin-bottom: 1.5em;
+}
+
 .widget-title {
   display: none;
+}
+
+#text-3 .widget-title {
+  display: block;
+  color: white;
+  background-color :$orange;
+  font-family: "Amatic SC", cursive;
+  font-size: 2.2em;
+  line-height: 1.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.social-media {
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: center;
+  li a {
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-image: url(assets/images/round.png);
+    background-size: contain;
+    padding: 19px 0 0 2px;
+    text-align: center;
+    font-size: 2em;
+    color: $bg;
+    text-shadow: rgba(0,0,0, .2) -1px 0 1px;
+    margin: 0 .1em;
+    &:hover {
+      text-shadow: rgba(0,0,0, .2) -1px 0 1px, rgba(0,0,0, .2) 2px 0 1px;
+      filter: brightness(1.1);
+    }
+  }
+}
+
+.widget-friends {
+  border-bottom: 4px solid $orange;
+  padding: .6em 0;
+  color: $orange;
+  a {
+    font-size: 1.5em;
+    line-height: 1.2em;
+    font-weight: 100;
+    &:hover {
+      color: $d-orange;
+    }
+  }
 }
