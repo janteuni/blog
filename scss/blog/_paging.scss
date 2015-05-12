@@ -1,0 +1,27 @@
+.nav-below {
+  [class^=nav-] a {
+    display: block;
+    color: $bg;
+    font-size: 1.2em;
+    font-weight: 500;
+    background-color: $teal;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 6px;
+    border: 1px solid darken($teal, 6);
+    &:hover {
+      background-color: darken($teal, 6);
+    }
+  }
+}
+
+.nav-previous {
+  float: left;
+}
+
+.nav-next {
+  float: right;
+}
+
