@@ -43,6 +43,7 @@
     border-bottom: 6px solid $dark-teal;
     li {
       padding: .6em .8em;
+      font-size: 2.3em;
       &:nth-child(odd) {
         text-align: right;
         &:after {
@@ -60,5 +61,17 @@
         margin-left: unset;
       }
     }
+  }
+}
+
+@media (max-width: 1190px) {
+  #menu-primary {
+    bottom: 40px;
+    li {
+      font-size: 2em;
+    }
+  }
+  #menu-primary li:nth-child(odd):after {
+    top: 16px;
   }
 }

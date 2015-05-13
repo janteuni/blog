@@ -1,0 +1,31 @@
+footer {
+  margin-top: 2em;
+  padding: 2em;
+  background-color: white;
+  h1 {
+    font-family: "Amatic SC";
+    font-size: 2.5em;
+    font-weight: lighter;
+    color: $teal;
+    line-height: 1.5em;
+    margin: .3em 0;
+  }
+  ul {
+    color: $d-teal;
+    font-weight: 100;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    text-transform: capitalize;
+  }
+  .follow-us li {
+    display: inline;
+    font-size: 1.5em;
+    margin-right: .2em;
+  }
+}
+
+@media (max-width: 980px) {
+  footer {
+    text-align: center;
+  }
+}

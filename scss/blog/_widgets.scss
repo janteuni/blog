@@ -54,3 +54,19 @@
     }
   }
 }
+
+.rotate-anim {
+  &:hover {
+    animation: rotation 750ms infinite;
+    animation-timing-function: linear;
+  }
+}
+
+@-webkit-keyframes rotation{
+  0%{-webkit-transform:rotate(0deg);}
+  25%{-webkit-transform:rotate(10deg);}
+  75%{-webkit-transform:rotate(-10deg);}
+  100%{-webkit-transform:rotate(0deg);}
+}
+
+
