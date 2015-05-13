@@ -24,7 +24,11 @@
     <title><?php wp_title( '-', true, 'right' ); bloginfo('name') ?></title>
     
     <!-- favicon & links -->
-    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="76x76" href="<?php echo get_template_directory_uri(); ?>/assets/images/76-76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="<?php echo get_template_directory_uri(); ?>/assets/images/120-120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="<?php echo get_template_directory_uri(); ?>/assets/images/152-152.png">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
     <!-- stylesheets are enqueued via functions.php -->
