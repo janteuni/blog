@@ -10,6 +10,42 @@ input[type="text"] {
   }
 }
 
+.newsletter {
+  width: 100%;
+  input[type="email"] {
+    background-color: white;
+    border: 1px solid darken($x-light-teal, 5);
+    padding: .8em;
+    color: $teal;
+    font-size: 1em;
+    width: 75%;
+    &:focus {
+      border-left-color: $medium-teal;
+    }
+  }
+  input[type="submit"] {
+    padding: .8em;
+    font-size: 1em;
+  }
+}
+
+.mc4wp-alert {
+  padding: .5em;
+  margin-top: .5em;
+  border-radius: 3px;
+}
+
+.mc4wp-success {
+  background-color: $teal;
+  color: white;
+}
+
+.mc4wp-notice, .mc4wp-error {
+  background-color: $light-orange;
+  color: white;
+  border: $light-orange;
+}
+
 input[type="submit"] {
   background-color: $teal;
   padding: .8em;
