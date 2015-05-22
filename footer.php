@@ -19,9 +19,9 @@
     <div class="fs-cell fs-lg-fourth fs-md-third fs-sm-half fs-xs-full">
         <h1>Suivez l'âne</h1>
         <ul class="follow-us">
-            <li><a href="#"><i class="icon-facebook2"></i></a></li>
-            <li><a href="#"><i class="icon-instagram"></i></a></li>
-            <li><a href="#"><i class="icon-pinterest"></i></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100009292790762"><i class="icon-facebook2"></i></a></li>
+            <li><a target="_blank" href="https://instagram.com/laneanageoires/"><i class="icon-instagram"></i></a></li>
+            <li><a target="_blank" href="https://www.pinterest.com/lnageoires/"><i class="icon-pinterest"></i></a></li>
         </ul>
     </div>
 </div>
