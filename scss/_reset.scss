@@ -88,6 +88,27 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
+.clear {
+  clear: both;
+}
+
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
 /* The below restores some sensible defaults */
 
 strong {
