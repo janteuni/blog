@@ -20,7 +20,7 @@
         <h1>Suivez l'âne</h1>
         <ul class="follow-us">
             <li><a target="_blank" href="https://www.facebook.com/pages/L%C3%82ne-%C3%A0-Nageoires/913537742002766"><i class="icon-facebook2"></i></a></li>
-            <li><a target="_blank" href="https://instagram.com/laneanageoires/"><i class="icon-instagram"></i></a></li>
+            <li><a target="_blank" href="https://instagram.com/laneanageoires_/"><i class="icon-instagram"></i></a></li>
             <li><a target="_blank" href="https://www.pinterest.com/lnageoires/"><i class="icon-pinterest"></i></a></li>
         </ul>
     </div>
